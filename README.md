@@ -29,6 +29,9 @@
  #### c. Học viên:
     +  Xem số cá nhân đã điểm danh, vắng, đi trễ.  
     +  Xem lịch học.  
+    +  Xem điểm
+    +  Đăng ký tín chỉ
+    +  Liên hệ với giáo viên
 
 
 ## 3. Phân tích chức 
