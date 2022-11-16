@@ -8,13 +8,18 @@
 
 ## 2. Chức năng từng đối tượng:
  #### a. Giáo vụ
-    + Quản lý lịch học.
-	+  Quản lý giáo viên.
-	+  Phân công giáo viên.
-	+  Xếp lớp.
-	+  Xếp ca học.
-	+  Phân thời khóa biểu cho mỗi lớp.
-	+  Tìm kiếm giáo viên theo tên, theo môn.
+    + Quản lý khóa
++	Quản lý ngành
++ 	Quản lý lớp
++	Quản lý môn học
++	Quản lý gv
++ 	Quản lý sinh viên
++	Phân công dạy học
++	Quản lý điểm danh
++	Quản lý lịch thi
++	Quản lý điểm chuyên cần
++	Quản lý tín chỉ
+
  #### b. Giảng viên:
     +  Điểm danh học viên(radio).
     +  Tìm kiếm học viên theo lớp, tên, theo ca ( select 2 ).
