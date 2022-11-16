@@ -9,16 +9,16 @@
 ## 2. Chức năng từng đối tượng:
  #### a. Giáo vụ
     + Quản lý khóa
-    +	Quản lý ngành
-    + 	Quản lý lớp
-    +	Quản lý môn học
-    +	Quản lý gv
-    + 	Quản lý sinh viên
-    +	Phân công dạy học
-    +	Quản lý điểm danh
-    +	Quản lý lịch thi
-    +	Quản lý điểm chuyên cần
-    +	Quản lý tín chỉ
+    + Quản lý ngành
+    + Quản lý lớp
+    + Quản lý môn học
+    + Quản lý gv
+    + Quản lý sinh viên
+    + Phân công dạy học
+    + Quản lý điểm danh
+    + Quản lý lịch thi
+    + Quản lý điểm chuyên cần
+    + Quản lý tín chỉ
 
  #### b. Giảng viên:
     +  Điểm danh học viên(radio).
