@@ -18,6 +18,7 @@ Route::get('/', function () {
     return view('layout.master');
 });
 
+// Route sign in/ sign up
 Route::get("/sign_in", function(){
     return view("layout.sign_in");})->name("layout.sign_in");
 Route::get("/sign_up", function(){

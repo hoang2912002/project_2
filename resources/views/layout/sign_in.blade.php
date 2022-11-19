@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>
-            Argon Dashboard 2 PRO by Creative Tim
+            Sign in Attendance website
         </title>
         @include('layout.link_css')
         <style>
