@@ -17,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('layout.master');
 });
+
+Route::get("/sign_in", function(){
+    return view("layout.sign_in");})->name("layout.sign_in");
+Route::get("/sign_up", function(){
+    return view("layout.sign_up");})->name("layout.sign_up");
