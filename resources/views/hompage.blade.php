@@ -1,4 +1,5 @@
-{{-- content --}}
+@extends('layout.main')
+@section('content')
 <div class="container-fluid py-4">
     <div class="row">
         <div class="col-lg-12">
@@ -23,8 +24,7 @@
                                 <div class="col-4 text-end">
                                     <div
                                         class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle">
-                                        <i class="ni ni-money-coins text-lg opacity-10"
-                                            aria-hidden="true"></i>
+                                        <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
@@ -77,8 +77,7 @@
                                 <div class="col-4 text-end">
                                     <div
                                         class="icon icon-shape bg-gradient-success shadow-success text-center rounded-circle">
-                                        <i class="ni ni-paper-diploma text-lg opacity-10"
-                                            aria-hidden="true"></i>
+                                        <i class="ni ni-paper-diploma text-lg opacity-10" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
@@ -135,11 +134,10 @@
             <div class="card card-carousel overflow-hidden h-100 p-0">
                 <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
                     <div class="carousel-inner border-radius-lg h-100">
-                        <div class="carousel-item h-100 active"
-                            style="background-image: url('../../assets/img/img-2.jpg');background-size: cover;">
+                        <div class="carousel-item h-100 active" style="background-image: url('{{ asset('assets') }}/img/img-2.jpg');
+      background-size: cover;">
                             <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
-                                <div
-                                    class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
+                                <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
                                     <i class="ni ni-camera-compact text-dark opacity-10"></i>
                                 </div>
                                 <h5 class="text-white mb-1">Get started with Argon</h5>
@@ -147,11 +145,10 @@
                                     at.</p>
                             </div>
                         </div>
-                        <div class="carousel-item h-100"
-                            style="background-image: url('../../assets/img/img-1.jpg');background-size: cover;">
+                        <div class="carousel-item h-100" style="background-image: url('{{ asset('assets') }}/img/img-1.jpg');
+      background-size: cover;">
                             <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
-                                <div
-                                    class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
+                                <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
                                     <i class="ni ni-bulb-61 text-dark opacity-10"></i>
                                 </div>
                                 <h5 class="text-white mb-1">Faster way to create web pages</h5>
@@ -159,11 +156,10 @@
                                     the ability to learn.</p>
                             </div>
                         </div>
-                        <div class="carousel-item h-100"
-                            style="background-image: url('../../assets/img/img-3.jpg');background-size: cover;">
+                        <div class="carousel-item h-100" style="background-image: url('{{ asset('assets') }}/img/img-3.jpg');
+      background-size: cover;">
                             <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
-                                <div
-                                    class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
+                                <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
                                     <i class="ni ni-trophy text-dark opacity-10"></i>
                                 </div>
                                 <h5 class="text-white mb-1">Share with us your design tips!</h5>
@@ -199,7 +195,7 @@
                                 <div class="col-auto d-flex align-items-center">
                                     <a href="javascript:;" class="avatar">
                                         <img class="border-radius-lg" alt="Image placeholder"
-                                            src="../../assets/img/team-1.jpg">
+                                            src="{{ asset('assets') }}/img/team-1.jpg">
                                     </a>
                                 </div>
                                 <div class="col ml-2">
@@ -209,8 +205,7 @@
                                     <span class="badge badge-success badge-sm">Online</span>
                                 </div>
                                 <div class="col-auto">
-                                    <button type="button"
-                                        class="btn btn-outline-primary btn-xs mb-0">Add</button>
+                                    <button type="button" class="btn btn-outline-primary btn-xs mb-0">Add</button>
                                 </div>
                             </div>
                         </li>
@@ -219,7 +214,7 @@
                                 <div class="col-auto d-flex align-items-center">
                                     <a href="javascript:;" class="avatar">
                                         <img class="border-radius-lg" alt="Image placeholder"
-                                            src="../../assets/img/team-2.jpg">
+                                            src="{{ asset('assets') }}/img/team-2.jpg">
                                     </a>
                                 </div>
                                 <div class="col ml-2">
@@ -229,8 +224,7 @@
                                     <span class="badge badge-warning badge-sm">in Meeting</span>
                                 </div>
                                 <div class="col-auto">
-                                    <button type="button"
-                                        class="btn btn-xs btn-outline-primary mb-0">Add</button>
+                                    <button type="button" class="btn btn-xs btn-outline-primary mb-0">Add</button>
                                 </div>
                             </div>
                         </li>
@@ -239,7 +233,7 @@
                                 <div class="col-auto d-flex align-items-center">
                                     <a href="javascript:;" class="avatar">
                                         <img class="border-radius-lg" alt="Image placeholder"
-                                            src="../../assets/img/team-5.jpg">
+                                            src="{{ asset('assets') }}/img/team-5.jpg">
                                     </a>
                                 </div>
                                 <div class="col ml-2">
@@ -249,8 +243,7 @@
                                     <span class="badge badge-danger badge-sm">Offline</span>
                                 </div>
                                 <div class="col-auto">
-                                    <button type="button"
-                                        class="btn btn-xs btn-outline-primary mb-0">Add</button>
+                                    <button type="button" class="btn btn-xs btn-outline-primary mb-0">Add</button>
                                 </div>
                             </div>
                         </li>
@@ -259,7 +252,7 @@
                                 <div class="col-auto d-flex align-items-center">
                                     <a href="javascript:;" class="avatar">
                                         <img class="border-radius-lg" alt="Image placeholder"
-                                            src="../../assets/img/team-4.jpg">
+                                            src="{{ asset('assets') }}/img/team-4.jpg">
                                     </a>
                                 </div>
                                 <div class="col ml-2">
@@ -269,8 +262,7 @@
                                     <span class="badge badge-success badge-sm">Online</span>
                                 </div>
                                 <div class="col-auto">
-                                    <button type="button"
-                                        class="btn btn-xs btn-outline-primary mb-0">Add</button>
+                                    <button type="button" class="btn btn-xs btn-outline-primary mb-0">Add</button>
                                 </div>
                             </div>
                         </li>
@@ -292,8 +284,7 @@
                                     <small class="text-xs">09:30 AM</small>
                                 </div>
                                 <div class="form-check my-auto ms-auto">
-                                    <input class="form-check-input" type="checkbox" id="customCheck1"
-                                        checked>
+                                    <input class="form-check-input" type="checkbox" id="customCheck1" checked>
                                 </div>
                             </div>
                         </li>
@@ -326,8 +317,7 @@
                                     <small>10:30 AM</small>
                                 </div>
                                 <div class="form-check my-auto ms-auto">
-                                    <input class="form-check-input" type="checkbox" id="customCheck2"
-                                        checked>
+                                    <input class="form-check-input" type="checkbox" id="customCheck2" checked>
                                 </div>
                             </div>
                         </li>
@@ -347,15 +337,14 @@
                                 <div class="col-auto">
                                     <a href="javascript:;" class="avatar rounded-circle">
                                         <img alt="Image placeholder"
-                                            src="../../assets/img/small-logos/logo-jira.svg">
+                                            src="{{ asset('assets') }}/img/small-logos/logo-jira.svg">
                                     </a>
                                 </div>
                                 <div class="col">
                                     <h6>React Material Dashboard</h6>
                                     <div class="progress progress-xs mb-0">
-                                        <div class="progress-bar bg-primary" role="progressbar"
-                                            aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
-                                            style="width: 90%;"></div>
+                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
                                     </div>
                                 </div>
                             </div>
@@ -365,15 +354,14 @@
                                 <div class="col-auto">
                                     <a href="javascript:;" class="avatar rounded-circle">
                                         <img alt="Image placeholder"
-                                            src="../../assets/img/small-logos/logo-asana.svg">
+                                            src="{{ asset('assets') }}/img/small-logos/logo-asana.svg">
                                     </a>
                                 </div>
                                 <div class="col">
                                     <h6>Argon Design System</h6>
                                     <div class="progress progress-xs mb-0">
-                                        <div class="progress-bar bg-warning" role="progressbar"
-                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                            style="width: 60%;"></div>
+                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="60"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
                                     </div>
                                 </div>
                             </div>
@@ -383,15 +371,14 @@
                                 <div class="col-auto">
                                     <a href="javascript:;" class="avatar rounded-circle">
                                         <img alt="Image placeholder"
-                                            src="../../assets/img/small-logos/logo-spotify.svg">
+                                            src="{{ asset('assets') }}/img/small-logos/logo-spotify.svg">
                                     </a>
                                 </div>
                                 <div class="col">
                                     <h6>VueJs Now UI Kit PRO</h6>
                                     <div class="progress progress-xs mb-0">
-                                        <div class="progress-bar bg-success" role="progressbar"
-                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
-                                            style="width: 100%;"></div>
+                                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
                                     </div>
                                 </div>
                             </div>
@@ -401,7 +388,7 @@
                                 <div class="col-auto">
                                     <a href="javascript:;" class="avatar rounded-circle">
                                         <img alt="Image placeholder"
-                                            src="../../assets/img/small-logos/bootstrap.svg">
+                                            src="{{ asset('assets') }}/img/small-logos/bootstrap.svg">
                                     </a>
                                 </div>
                                 <div class="col">
@@ -425,7 +412,7 @@
                 <div class="card-header d-flex align-items-center border-bottom py-3">
                     <div class="d-flex align-items-center">
                         <a href="javascript:;">
-                            <img src="../../assets/img/team-4.jpg" class="avatar" alt="profile-image">
+                            <img src="{{ asset('assets') }}/img/team-4.jpg" class="avatar" alt="profile-image">
                         </a>
                         <div class="mx-3">
                             <a href="javascript:;" class="text-dark font-weight-600 text-sm">John Snow</a>
@@ -438,7 +425,114 @@
                         </button>
                     </div>
                 </div>
-                
+                <div class="card-body">
+                    <p class="mb-4">
+                        Personal profiles are the perfect way for you to grab their attention and persuade
+                        recruiters to continue reading your CV because you’re telling them from the off exactly
+                        why they should hire you.
+                    </p>
+                    <img alt="Image placeholder"
+                        src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/activity-feed.jpg"
+                        class="img-fluid border-radius-lg shadow-lg max-height-500">
+                    <div class="row align-items-center px-2 mt-4 mb-2">
+                        <div class="col-sm-6">
+                            <div class="d-flex">
+                                <div class="d-flex align-items-center">
+                                    <i class="ni ni-like-2 me-1 cursor-pointer opacity-6"></i>
+                                    <span class="text-sm me-3 ">150</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="ni ni-chat-round me-1 cursor-pointer opacity-6"></i>
+                                    <span class="text-sm me-3">36</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="ni ni-curved-next me-1 cursor-pointer opacity-6"></i>
+                                    <span class="text-sm me-2">12</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 d-none d-sm-block">
+                            <div class="d-flex align-items-center justify-content-sm-end">
+                                <div class="d-flex align-items-center">
+                                    <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-toggle="tooltip"
+                                        data-original-title="Jessica Rowland">
+                                        <img alt="Image placeholder" src="{{ asset('assets') }}/img/team-5.jpg"
+                                            class="">
+                                    </a>
+                                    <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-toggle="tooltip"
+                                        data-original-title="Audrey Love">
+                                        <img alt="Image placeholder" src="{{ asset('assets') }}/img/team-2.jpg"
+                                            class="rounded-circle">
+                                    </a>
+                                    <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-toggle="tooltip"
+                                        data-original-title="Michael Lewis">
+                                        <img alt="Image placeholder" src="{{ asset('assets') }}/img/team-1.jpg"
+                                            class="rounded-circle">
+                                    </a>
+                                </div>
+                                <small class="ps-2 font-weight-bold">and 30+ more</small>
+                            </div>
+                        </div>
+                        <hr class="horizontal dark my-3">
+                    </div>
+
+                    <div class="mb-1">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <img alt="Image placeholder" class="avatar rounded-circle"
+                                    src="{{ asset('assets') }}/img/bruce-mars.jpg">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h6 class="h5 mt-0">Michael Lewis</h6>
+                                <p class="text-sm">I always felt like I could do anything. That’s the main thing
+                                    people are controlled by! Thoughts- their perception of themselves!</p>
+                                <div class="d-flex">
+                                    <div>
+                                        <i class="ni ni-like-2 me-1 cursor-pointer opacity-6"></i>
+                                    </div>
+                                    <span class="text-sm me-2">3 likes</span>
+                                    <div>
+                                        <i class="ni ni-curved-next me-1 cursor-pointer opacity-6"></i>
+                                    </div>
+                                    <span class="text-sm me-2">2 shares</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-3">
+                            <div class="flex-shrink-0">
+                                <img alt="Image placeholder" class="avatar rounded-circle"
+                                    src="{{ asset('assets') }}/img/team-5.jpg">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h6 class="h5 mt-0">Jessica Stones</h6>
+                                <p class="text-sm">Society has put up so many boundaries, so many limitations on
+                                    what’s right and wrong that it’s almost impossible to get a pure thought
+                                    out. It’s like a little kid, a little boy.</p>
+                                <div class="d-flex">
+                                    <div>
+                                        <i class="ni ni-like-2 me-1 cursor-pointer opacity-6"></i>
+                                    </div>
+                                    <span class="text-sm me-2">10 likes</span>
+                                    <div>
+                                        <i class="ni ni-curved-next me-1 cursor-pointer opacity-6"></i>
+                                    </div>
+                                    <span class="text-sm me-2">1 share</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <div class="flex-shrink-0">
+                                <img alt="Image placeholder" class="avatar rounded-circle me-3"
+                                    src="{{ asset('assets') }}/img/team-4.jpg">
+                            </div>
+                            <div class="flex-grow-1 my-auto">
+                                <form>
+                                    <textarea class="form-control" placeholder="Write your comment" rows="1"></textarea>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-12 col-lg-7">
@@ -448,17 +542,13 @@
                         <table class="table align-items-center mb-0">
                             <thead>
                                 <tr>
-                                    <th
-                                        class="text-uppercase text-dark text-xxs font-weight-bolder opacity-7">
+                                    <th class="text-uppercase text-dark text-xxs font-weight-bolder opacity-7">
                                         Project</th>
-                                    <th
-                                        class="text-uppercase text-dark text-xxs font-weight-bolder opacity-7 ps-2">
+                                    <th class="text-uppercase text-dark text-xxs font-weight-bolder opacity-7 ps-2">
                                         Budget</th>
-                                    <th
-                                        class="text-uppercase text-dark text-xxs font-weight-bolder opacity-7 ps-2">
+                                    <th class="text-uppercase text-dark text-xxs font-weight-bolder opacity-7 ps-2">
                                         Status</th>
-                                    <th
-                                        class="text-uppercase text-dark text-xxs font-weight-bolder opacity-7 ps-2">
+                                    <th class="text-uppercase text-dark text-xxs font-weight-bolder opacity-7 ps-2">
                                         Completion</th>
                                     <th></th>
                                 </tr>
@@ -491,8 +581,8 @@
                                             <div>
                                                 <div class="progress">
                                                     <div class="progress-bar bg-info" role="progressbar"
-                                                        aria-valuenow="60" aria-valuemin="0"
-                                                        aria-valuemax="100" style="width: 60%;"></div>
+                                                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                                        style="width: 60%;"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -530,8 +620,8 @@
                                             <div>
                                                 <div class="progress">
                                                     <div class="progress-bar bg-success" role="progressbar"
-                                                        aria-valuenow="100" aria-valuemin="0"
-                                                        aria-valuemax="100" style="width: 100%;"></div>
+                                                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                                        style="width: 100%;"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -570,8 +660,8 @@
                                             <div>
                                                 <div class="progress">
                                                     <div class="progress-bar bg-danger" role="progressbar"
-                                                        aria-valuenow="30" aria-valuemin="0"
-                                                        aria-valuemax="30" style="width: 30%;"></div>
+                                                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="30"
+                                                        style="width: 30%;"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -610,8 +700,8 @@
                                             <div>
                                                 <div class="progress">
                                                     <div class="progress-bar bg-success" role="progressbar"
-                                                        aria-valuenow="0" aria-valuemin="0"
-                                                        aria-valuemax="0" style="width: 0%;"></div>
+                                                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="0"
+                                                        style="width: 0%;"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -650,8 +740,8 @@
                                             <div>
                                                 <div class="progress">
                                                     <div class="progress-bar bg-info" role="progressbar"
-                                                        aria-valuenow="80" aria-valuemin="0"
-                                                        aria-valuemax="80" style="width: 80%;"></div>
+                                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"
+                                                        style="width: 80%;"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -690,8 +780,8 @@
                                             <div>
                                                 <div class="progress">
                                                     <div class="progress-bar bg-success" role="progressbar"
-                                                        aria-valuenow="100" aria-valuemin="0"
-                                                        aria-valuemax="100" style="width: 100%;"></div>
+                                                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                                        style="width: 100%;"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -744,8 +834,8 @@
                         <div class="card-body">
                             <div class="row justify-content-between align-items-center">
                                 <div class="col">
-                                    <img src="../../assets/img/logos/bitcoin.jpg"
-                                        class="w-30 border-radius-md" alt="Image placeholder">
+                                    <img src="{{ asset('assets') }}/img/logos/bitcoin.jpg" class="w-30 border-radius-md"
+                                        alt="Image placeholder">
                                 </div>
                                 <div class="col-auto">
                                     <span class="badge badge-lg badge-success">Active</span>
@@ -765,18 +855,15 @@
                                 <div class="col ms-auto text-end">
                                     <div class="btn-groups mt-3">
                                         <div class="btn rounded-circle btn-sm btn-white mb-0 p-1"
-                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                            title="Receive">
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Receive">
                                             <i class="ni ni-bold-down p-2"></i>
                                         </div>
                                         <div class="btn rounded-circle btn-sm btn-white mb-0 p-1"
-                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                            title="Send">
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Send">
                                             <i class="ni ni-bold-up p-2"></i>
                                         </div>
                                         <div class="btn rounded-circle btn-sm btn-white mb-0 p-1"
-                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                            title="Swap">
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Swap">
                                             <i class="ni ni-curved-next p-2"></i>
                                         </div>
                                     </div>
@@ -800,7 +887,7 @@
                                     <td class="w-30">
                                         <div class="d-flex px-2 py-1 align-items-center">
                                             <div>
-                                                <img src="../../assets/img/icons/flags/US.png"
+                                                <img src="{{ asset('assets') }}/img/icons/flags/US.png"
                                                     alt="Country flag">
                                             </div>
                                             <div class="ms-4">
@@ -832,7 +919,7 @@
                                     <td class="w-30">
                                         <div class="d-flex px-2 py-1 align-items-center">
                                             <div>
-                                                <img src="../../assets/img/icons/flags/DE.png"
+                                                <img src="{{ asset('assets') }}/img/icons/flags/DE.png"
                                                     alt="Country flag">
                                             </div>
                                             <div class="ms-4">
@@ -864,7 +951,7 @@
                                     <td class="w-30">
                                         <div class="d-flex px-2 py-1 align-items-center">
                                             <div>
-                                                <img src="../../assets/img/icons/flags/GB.png"
+                                                <img src="{{ asset('assets') }}/img/icons/flags/GB.png"
                                                     alt="Country flag">
                                             </div>
                                             <div class="ms-4">
@@ -896,7 +983,7 @@
                                     <td class="w-30">
                                         <div class="d-flex px-2 py-1 align-items-center">
                                             <div>
-                                                <img src="../../assets/img/icons/flags/BR.png"
+                                                <img src="{{ asset('assets') }}/img/icons/flags/BR.png"
                                                     alt="Country flag">
                                             </div>
                                             <div class="ms-4">
@@ -938,11 +1025,9 @@
                     <table class="table align-items-center mb-0">
                         <thead>
                             <tr>
-                                <th
-                                    class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                     Author</th>
-                                <th
-                                    class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
                                     Function</th>
                                 <th
                                     class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
@@ -963,9 +1048,9 @@
                                         </div>
                                         <div class="d-flex flex-column justify-content-center">
                                             <h6 class="mb-0 text-xs">John Michael</h6>
-                                            <p class="text-xs text-secondary mb-0"><a
-                                                    href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                                    data-cfemail="33595c5b5d7350415652475a45561e475a5e1d505c5e">[email&#160;protected]</a>
+                                            <p class="text-xs text-secondary mb-0"><a href="/cdn-cgi/l/email-protection"
+                                                    class="__cf_email__"
+                                                    data-cfemail="264c494e486645544347524f50430b524f4b0845494b">[email&#160;protected]</a>
                                             </p>
                                         </div>
                                     </div>
@@ -996,9 +1081,9 @@
                                         </div>
                                         <div class="d-flex flex-column justify-content-center">
                                             <h6 class="mb-0 text-xs">Alexa Liras</h6>
-                                            <p class="text-xs text-secondary mb-0"><a
-                                                    href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                                    data-cfemail="0a6b666f726b4a69786f6b7e637c6f277e636724696567">[email&#160;protected]</a>
+                                            <p class="text-xs text-secondary mb-0"><a href="/cdn-cgi/l/email-protection"
+                                                    class="__cf_email__"
+                                                    data-cfemail="c8a9a4adb0a988abbaada9bca1beade5bca1a5e6aba7a5">[email&#160;protected]</a>
                                             </p>
                                         </div>
                                     </div>
@@ -1029,9 +1114,9 @@
                                         </div>
                                         <div class="d-flex flex-column justify-content-center">
                                             <h6 class="mb-0 text-xs">Laurent Perrier</h6>
-                                            <p class="text-xs text-secondary mb-0"><a
-                                                    href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                                    data-cfemail="3a565b4f485f544e7a59485f5b4e534c5f174e535714595557">[email&#160;protected]</a>
+                                            <p class="text-xs text-secondary mb-0"><a href="/cdn-cgi/l/email-protection"
+                                                    class="__cf_email__"
+                                                    data-cfemail="3955584c4b5c574d795a4b5c584d504f5c144d5054175a5654">[email&#160;protected]</a>
                                             </p>
                                         </div>
                                     </div>
@@ -1062,9 +1147,9 @@
                                         </div>
                                         <div class="d-flex flex-column justify-content-center">
                                             <h6 class="mb-0 text-xs">Michael Levi</h6>
-                                            <p class="text-xs text-secondary mb-0"><a
-                                                    href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                                    data-cfemail="402d29232821252c0023322521342936256d34292d6e232f2d">[email&#160;protected]</a>
+                                            <p class="text-xs text-secondary mb-0"><a href="/cdn-cgi/l/email-protection"
+                                                    class="__cf_email__"
+                                                    data-cfemail="b0ddd9d3d8d1d5dcf0d3c2d5d1c4d9c6d59dc4d9dd9ed3dfdd">[email&#160;protected]</a>
                                             </p>
                                         </div>
                                     </div>
@@ -1095,9 +1180,9 @@
                                         </div>
                                         <div class="d-flex flex-column justify-content-center">
                                             <h6 class="mb-0 text-xs">Richard Gran</h6>
-                                            <p class="text-xs text-secondary mb-0"><a
-                                                    href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                                    data-cfemail="20524943484152446043524541544956450d54494d0e434f4d">[email&#160;protected]</a>
+                                            <p class="text-xs text-secondary mb-0"><a href="/cdn-cgi/l/email-protection"
+                                                    class="__cf_email__"
+                                                    data-cfemail="04766d676c6576604467766165706d726129706d692a676b69">[email&#160;protected]</a>
                                             </p>
                                         </div>
                                     </div>
@@ -1131,8 +1216,7 @@
                 </div>
                 <div class="card-body p-3">
                     <ul class="list-group">
-                        <li
-                            class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
+                        <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
                             <div class="d-flex align-items-center">
                                 <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
                                     <i class="ni ni-mobile-button text-white opacity-10"></i>
@@ -1149,8 +1233,7 @@
                                         class="ni ni-bold-right" aria-hidden="true"></i></button>
                             </div>
                         </li>
-                        <li
-                            class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
+                        <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
                             <div class="d-flex align-items-center">
                                 <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
                                     <i class="ni ni-tag text-white opacity-10"></i>
@@ -1167,8 +1250,7 @@
                                         class="ni ni-bold-right" aria-hidden="true"></i></button>
                             </div>
                         </li>
-                        <li
-                            class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
+                        <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
                             <div class="d-flex align-items-center">
                                 <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
                                     <i class="ni ni-box-2 text-white opacity-10"></i>
@@ -1185,8 +1267,7 @@
                                         class="ni ni-bold-right" aria-hidden="true"></i></button>
                             </div>
                         </li>
-                        <li
-                            class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg">
+                        <li class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg">
                             <div class="d-flex align-items-center">
                                 <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
                                     <i class="ni ni-satisfied text-white opacity-10"></i>
@@ -1207,5 +1288,45 @@
             </div>
         </div>
     </div>
-    @include('layout.footer')
+    <footer class="footer pt-3  ">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-lg-between">
+                <div class="col-lg-6 mb-lg-0 mb-4">
+                    <div class="copyright text-center text-sm text-muted text-lg-start">
+                        © <script data-cfasync="false"
+                            src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>,
+                        made with <i class="fa fa-heart"></i> by
+                        <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative
+                            Tim</a>
+                        for a better web.
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+                        <li class="nav-item">
+                            <a href="https://www.creative-tim.com" class="nav-link text-muted" target="_blank">Creative
+                                Tim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.creative-tim.com/presentation" class="nav-link text-muted"
+                                target="_blank">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.creative-tim.com/blog" class="nav-link text-muted"
+                                target="_blank">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.creative-tim.com/license" class="nav-link pe-0 text-muted"
+                                target="_blank">License</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
+
+@endsection

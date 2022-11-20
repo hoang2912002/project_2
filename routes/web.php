@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ManagerController;
+use App\Http\Controllers\TeacherController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,13 +15,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
 Route::get('/', function () {
-    return view('layout.master');
+    return view('layout.main');
 });
 
-// Route sign in/ sign up
-Route::get("/sign_in", function(){
-    return view("layout.sign_in");})->name("layout.sign_in");
-Route::get("/sign_up", function(){
-    return view("layout.sign_up");})->name("layout.sign_up");
+Route::middleware('checkLogin')->group(function () {
+    //Quản lý
+    Route::group(['controller' => ManagerController::class, 'prefix' => 'manager', 'as' => 'manager'], function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/create', 'create')->name('create');
+        Route::get('/edit/{teacherModel}', 'edit')->name('edit');
+        Route::post('/update/{teacherModel}', 'index')->name('update');
+        Route::delete('/destroy/{teacherModel}', 'destroy')->name('destroy');
+    });
+    //Giáo viên
+    Route::group(['controller' => TeacherController::class, 'prefix' => 'teacher', 'as' => 'teacher'], function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/create', 'create')->name('create');
+        Route::get('/edit/{teacherModel}', 'edit')->name('edit');
+        Route::post('/update/{teacherModel}', 'index')->name('update');
+        Route::delete('/destroy/{teacherModel}', 'destroy')->name('destroy');
+    });
+});
