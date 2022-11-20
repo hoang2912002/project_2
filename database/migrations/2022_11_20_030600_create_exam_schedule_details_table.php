@@ -17,6 +17,7 @@ class CreateExamScheduleDetailsTable extends Migration
             $table->foreignId('exam_schedule_id')->constrained();
             $table->foreignId('student_id')->constrained();
             $table->primary(['exam_schedule_id' , 'student_id']);
+            
         });
     }
 

@@ -22,6 +22,7 @@ class CreateAttendancesTable extends Migration
             $table->foreignId('shift')->constrained('shifts');
             $table->foreignId('teacher_id')->constrained('teachers');
             $table->unique(['course_id' , 'shift' , 'date']);
+            
         });
     }
 

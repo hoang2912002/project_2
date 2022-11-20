@@ -20,7 +20,8 @@ class CreatePointsTable extends Migration
             $table->float('diligence'); //điểm chuyên cần
             $table->float('mid_term'); 
             $table->float('final'); 
-            $table->float('total'); 
+            $table->float('total');
+             
         });
     }
 
