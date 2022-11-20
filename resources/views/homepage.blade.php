@@ -5,7 +5,7 @@
         <div class="row gx-4">
             <div class="col-auto">
                 <div class="avatar avatar-xl position-relative">
-                    <img src="{{ asset('assets') }}/img/team-1.jpg" alt="profile_image"
+                    <img src="../../../assets/img/team-1.jpg" alt="profile_image"
                         class="w-100 border-radius-lg shadow-sm">
                 </div>
             </div>
@@ -22,27 +22,32 @@
             <div class="col-lg-4 col-md-6 my-sm-auto ms-sm-auto me-sm-0 mx-auto mt-3">
                 <div class="nav-wrapper position-relative end-0">
                     <ul class="nav nav-pills nav-fill p-1" role="tablist">
-                        <li class="nav-item">
+                        <li class="nav-item" role="presentation">
                             <a class="nav-link mb-0 px-0 py-1 active d-flex align-items-center justify-content-center "
                                 data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="true">
                                 <i class="ni ni-app"></i>
                                 <span class="ms-2">App</span>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" role="presentation">
                             <a class="nav-link mb-0 px-0 py-1 d-flex align-items-center justify-content-center "
-                                data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="false">
+                                data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="false" tabindex="-1">
                                 <i class="ni ni-email-83"></i>
                                 <span class="ms-2">Messages</span>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" role="presentation">
                             <a class="nav-link mb-0 px-0 py-1 d-flex align-items-center justify-content-center "
-                                data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="false">
+                                data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="false" tabindex="-1">
                                 <i class="ni ni-settings-gear-65"></i>
                                 <span class="ms-2">Settings</span>
                             </a>
                         </li>
+                        <div class="moving-tab position-absolute nav-link"
+                            style="padding: 0px; transition: all 0.5s ease 0s; transform: translate3d(0px, 0px, 0px); width: 80px;">
+                            <a class="nav-link mb-0 px-0 py-1 active d-flex align-items-center justify-content-center "
+                                data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="true">-</a>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -60,7 +65,7 @@
                 <ul class="list-group">
                     <li class="list-group-item border-0 px-0">
                         <div class="form-check form-switch ps-0">
-                            <input class="form-check-input ms-0" type="checkbox" id="flexSwitchCheckDefault" checked>
+                            <input class="form-check-input ms-0" type="checkbox" id="flexSwitchCheckDefault" checked="">
                             <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0"
                                 for="flexSwitchCheckDefault">Email me when someone follows me</label>
                         </div>
@@ -74,7 +79,8 @@
                     </li>
                     <li class="list-group-item border-0 px-0">
                         <div class="form-check form-switch ps-0">
-                            <input class="form-check-input ms-0" type="checkbox" id="flexSwitchCheckDefault2" checked>
+                            <input class="form-check-input ms-0" type="checkbox" id="flexSwitchCheckDefault2"
+                                checked="">
                             <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0"
                                 for="flexSwitchCheckDefault2">Email me when someone mentions me</label>
                         </div>
@@ -91,7 +97,8 @@
                     </li>
                     <li class="list-group-item border-0 px-0">
                         <div class="form-check form-switch ps-0">
-                            <input class="form-check-input ms-0" type="checkbox" id="flexSwitchCheckDefault4" checked>
+                            <input class="form-check-input ms-0" type="checkbox" id="flexSwitchCheckDefault4"
+                                checked="">
                             <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0"
                                 for="flexSwitchCheckDefault4">Monthly product updates</label>
                         </div>
@@ -117,7 +124,8 @@
                     <div class="col-md-4 text-end">
                         <a href="javascript:;">
                             <i class="fas fa-user-edit text-secondary text-sm" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="Edit Profile"></i>
+                                data-bs-placement="top" aria-hidden="true" aria-label="Edit Profile"></i><span
+                                class="sr-only">Edit Profile</span>
                         </a>
                     </div>
                 </div>
@@ -125,33 +133,29 @@
             <div class="card-body p-3">
                 <p class="text-sm">
                     Hi, I’m Alec Thompson, Decisions: If you can’t decide, the answer is no. If two equally difficult
-                    paths,
-                    choose the one more painful in the short term (pain avoidance is creating an illusion of equality).
+                    paths, choose the one more painful in the short term (pain avoidance is creating an illusion of
+                    equality).
                 </p>
                 <hr class="horizontal gray-light my-4">
                 <ul class="list-group">
                     <li class="list-group-item border-0 ps-0 pt-0 text-sm"><strong class="text-dark">Full Name:</strong>
                         &nbsp; Alec M. Thompson</li>
                     <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Mobile:</strong> &nbsp;
-                        (44)
-                        123 1234 123</li>
+                        (44) 123 1234 123</li>
                     <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Email:</strong> &nbsp;
-                        <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                            data-cfemail="11707d747265797e7c61627e7f517c70787d3f727e7c">[email&#160;protected]</a>
-                    </li>
+                        alecthompson@mail.com</li>
                     <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Location:</strong>
-                        &nbsp;
-                        USA</li>
+                        &nbsp; USA</li>
                     <li class="list-group-item border-0 ps-0 pb-0">
                         <strong class="text-dark text-sm">Social:</strong> &nbsp;
                         <a class="btn btn-facebook btn-simple mb-0 ps-1 pe-2 py-0" href="javascript:;">
-                            <i class="fab fa-facebook fa-lg"></i>
+                            <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
                         </a>
                         <a class="btn btn-twitter btn-simple mb-0 ps-1 pe-2 py-0" href="javascript:;">
-                            <i class="fab fa-twitter fa-lg"></i>
+                            <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
                         </a>
                         <a class="btn btn-instagram btn-simple mb-0 ps-1 pe-2 py-0" href="javascript:;">
-                            <i class="fab fa-instagram fa-lg"></i>
+                            <i class="fab fa-instagram fa-lg" aria-hidden="true"></i>
                         </a>
                     </li>
                 </ul>
@@ -167,7 +171,7 @@
                 <ul class="list-group">
                     <li class="list-group-item border-0 d-flex align-items-center px-0 mb-2">
                         <div class="avatar me-3">
-                            <img src="{{ asset('assets') }}/img/kal-visuals-square.jpg" alt="kal"
+                            <img src="../../../assets/img/kal-visuals-square.jpg" alt="kal"
                                 class="border-radius-lg shadow">
                         </div>
                         <div class="d-flex align-items-start flex-column justify-content-center">
@@ -178,7 +182,7 @@
                     </li>
                     <li class="list-group-item border-0 d-flex align-items-center px-0 mb-2">
                         <div class="avatar me-3">
-                            <img src="{{ asset('assets') }}/img/marie.jpg" alt="kal" class="border-radius-lg shadow">
+                            <img src="../../../assets/img/marie.jpg" alt="kal" class="border-radius-lg shadow">
                         </div>
                         <div class="d-flex align-items-start flex-column justify-content-center">
                             <h6 class="mb-0 text-sm">Anne Marie</h6>
@@ -188,8 +192,7 @@
                     </li>
                     <li class="list-group-item border-0 d-flex align-items-center px-0 mb-2">
                         <div class="avatar me-3">
-                            <img src="{{ asset('assets') }}/img/ivana-square.jpg" alt="kal"
-                                class="border-radius-lg shadow">
+                            <img src="../../../assets/img/ivana-square.jpg" alt="kal" class="border-radius-lg shadow">
                         </div>
                         <div class="d-flex align-items-start flex-column justify-content-center">
                             <h6 class="mb-0 text-sm">Ivanna</h6>
@@ -199,7 +202,7 @@
                     </li>
                     <li class="list-group-item border-0 d-flex align-items-center px-0 mb-2">
                         <div class="avatar me-3">
-                            <img src="{{ asset('assets') }}/img/team-4.jpg" alt="kal" class="border-radius-lg shadow">
+                            <img src="../../../assets/img/team-4.jpg" alt="kal" class="border-radius-lg shadow">
                         </div>
                         <div class="d-flex align-items-start flex-column justify-content-center">
                             <h6 class="mb-0 text-sm">Peterson</h6>
@@ -209,7 +212,7 @@
                     </li>
                     <li class="list-group-item border-0 d-flex align-items-center px-0">
                         <div class="avatar me-3">
-                            <img src="{{ asset('assets') }}/img/team-3.jpg" alt="kal" class="border-radius-lg shadow">
+                            <img src="../../../assets/img/team-3.jpg" alt="kal" class="border-radius-lg shadow">
                         </div>
                         <div class="d-flex align-items-start flex-column justify-content-center">
                             <h6 class="mb-0 text-sm">Nick Daniel</h6>
@@ -235,7 +238,7 @@
                         <div class="card card-blog card-plain">
                             <div class="position-relative">
                                 <a class="d-block shadow-xl border-radius-xl">
-                                    <img src="{{ asset('assets') }}/img/home-decor-1.jpg" alt="img-blur-shadow"
+                                    <img src="../../../assets/img/home-decor-1.jpg" alt="img-blur-shadow"
                                         class="img-fluid shadow border-radius-xl">
                                 </a>
                             </div>
@@ -254,20 +257,20 @@
                                         Project</button>
                                     <div class="avatar-group mt-2">
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Elena Morison">
-                                            <img alt="Image placeholder" src="{{ asset('assets') }}/img/team-1.jpg">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom">
+                                            <img alt="Image placeholder" src="../../../assets/img/team-1.jpg">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Milly">
-                                            <img alt="Image placeholder" src="{{ asset('assets') }}/img/team-2.jpg">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom">
+                                            <img alt="Image placeholder" src="../../../assets/img/team-2.jpg">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Nick Daniel">
-                                            <img alt="Image placeholder" src="{{ asset('assets') }}/img/team-3.jpg">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom">
+                                            <img alt="Image placeholder" src="../../../assets/img/team-3.jpg">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Peterson">
-                                            <img alt="Image placeholder" src="{{ asset('assets') }}/img/team-4.jpg">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom">
+                                            <img alt="Image placeholder" src="../../../assets/img/team-4.jpg">
                                         </a>
                                     </div>
                                 </div>
@@ -278,7 +281,7 @@
                         <div class="card card-blog card-plain">
                             <div class="position-relative">
                                 <a class="d-block shadow-xl border-radius-xl">
-                                    <img src="{{ asset('assets') }}/img/home-decor-2.jpg" alt="img-blur-shadow"
+                                    <img src="../../../assets/img/home-decor-2.jpg" alt="img-blur-shadow"
                                         class="img-fluid shadow border-radius-lg">
                                 </a>
                             </div>
@@ -297,20 +300,20 @@
                                         Project</button>
                                     <div class="avatar-group mt-2">
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Nick Daniel">
-                                            <img alt="Image placeholder" src="{{ asset('assets') }}/img/team-3.jpg">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom">
+                                            <img alt="Image placeholder" src="../../../assets/img/team-3.jpg">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Peterson">
-                                            <img alt="Image placeholder" src="{{ asset('assets') }}/img/team-4.jpg">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom">
+                                            <img alt="Image placeholder" src="../../../assets/img/team-4.jpg">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Elena Morison">
-                                            <img alt="Image placeholder" src="{{ asset('assets') }}/img/team-1.jpg">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom">
+                                            <img alt="Image placeholder" src="../../../assets/img/team-1.jpg">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Milly">
-                                            <img alt="Image placeholder" src="{{ asset('assets') }}/img/team-2.jpg">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom">
+                                            <img alt="Image placeholder" src="../../../assets/img/team-2.jpg">
                                         </a>
                                     </div>
                                 </div>
@@ -321,7 +324,7 @@
                         <div class="card card-blog card-plain">
                             <div class="position-relative">
                                 <a class="d-block shadow-xl border-radius-xl">
-                                    <img src="{{ asset('assets') }}/img/home-decor-3.jpg" alt="img-blur-shadow"
+                                    <img src="../../../assets/img/home-decor-3.jpg" alt="img-blur-shadow"
                                         class="img-fluid shadow border-radius-xl">
                                 </a>
                             </div>
@@ -340,20 +343,20 @@
                                         Project</button>
                                     <div class="avatar-group mt-2">
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Peterson">
-                                            <img alt="Image placeholder" src="{{ asset('assets') }}/img/team-4.jpg">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom">
+                                            <img alt="Image placeholder" src="../../../assets/img/team-4.jpg">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Nick Daniel">
-                                            <img alt="Image placeholder" src="{{ asset('assets') }}/img/team-3.jpg">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom">
+                                            <img alt="Image placeholder" src="../../../assets/img/team-3.jpg">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Milly">
-                                            <img alt="Image placeholder" src="{{ asset('assets') }}/img/team-2.jpg">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom">
+                                            <img alt="Image placeholder" src="../../../assets/img/team-2.jpg">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Elena Morison">
-                                            <img alt="Image placeholder" src="{{ asset('assets') }}/img/team-1.jpg">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom">
+                                            <img alt="Image placeholder" src="../../../assets/img/team-1.jpg">
                                         </a>
                                     </div>
                                 </div>
@@ -364,7 +367,7 @@
                         <div class="card h-100 card-plain border">
                             <div class="card-body d-flex flex-column justify-content-center text-center">
                                 <a href="javascript:;">
-                                    <i class="fa fa-plus text-secondary mb-3"></i>
+                                    <i class="fa fa-plus text-secondary mb-3" aria-hidden="true"></i>
                                     <h5 class=" text-secondary"> New project </h5>
                                 </a>
                             </div>

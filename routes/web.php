@@ -16,8 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('login');
-});
+    return view('homepage');
+})->name('homepage');
 
 Route::middleware('checkLogin')->group(function () {
     //Quản lý
