@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layout.main');
+    return view('login');
 });
 
 Route::middleware('checkLogin')->group(function () {
