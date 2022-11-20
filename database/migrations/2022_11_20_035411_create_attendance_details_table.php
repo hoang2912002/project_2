@@ -18,6 +18,7 @@ class CreateAttendanceDetailsTable extends Migration
             $table->foreignId('student_id')->constrained();
             $table->integer('status');
             $table->primary(['attendance_id' , 'student_id']);
+            
         });
     }
 

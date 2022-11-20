@@ -20,7 +20,6 @@ class CreateExamSchedulesTable extends Migration
             $table->boolean('type')->default(0);
             $table->date('date');
             $table->foreignId('teacher_id')->constrained();
-            
         });
     }
 

@@ -28,6 +28,7 @@ class CreateTeachersTable extends Migration
             $table->string('district_id')->nullable();
             $table->string('ward_id')->nullable();
             $table->timestamps();
+            
         });
     }
 

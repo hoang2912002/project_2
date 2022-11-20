@@ -17,6 +17,7 @@ class CreateMajorsTable extends Migration
             $table->id();
             $table->string('name');
             $table->foreignId('department_id')->constrained('departments');
+            
         });
     }
 
