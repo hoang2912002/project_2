@@ -30,6 +30,7 @@ class CreateStudentsTable extends Migration
             $table->string('district_id')->nullable();
             $table->string('ward_id')->nullable();
             //$table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            
         });
 
         

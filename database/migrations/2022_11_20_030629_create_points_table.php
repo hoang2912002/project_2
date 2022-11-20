@@ -21,6 +21,7 @@ class CreatePointsTable extends Migration
             $table->float('mid_term'); 
             $table->float('final'); 
             $table->float('total'); 
+            
         });
     }
 

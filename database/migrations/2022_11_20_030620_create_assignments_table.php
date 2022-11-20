@@ -19,7 +19,7 @@ class CreateAssignmentsTable extends Migration
             $table->foreignId('course_id')->constrained();
             $table->foreignId('subject_id')->constrained();
             $table->date('date');
-            $table->foreignId('shift_id')->constrained();;
+            $table->foreignId('shift_id')->constrained();
         });
     }
 
